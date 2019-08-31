@@ -1,16 +1,19 @@
-# week1_day2
+#flutter-tile-match-game
+This is developed as part of assignment on GDG Flutter boot camp Week1.
 
-A new Flutter project.
+The game is to match all tiles to one color before the timer runs out.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Covered the concepts:
 
-A few resources to get you started if this is your first Flutter project:
+1.Intro
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2.Dart basics (data types, collections)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3.Layout Widgets
+
+4.Stateful Widgets
+
+5.Using packages for timer
+
+<img src="Screenshots/Screenshot.png" width="450">
