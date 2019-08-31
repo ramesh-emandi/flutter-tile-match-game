@@ -218,8 +218,7 @@ class _ShapeWidgetState extends State<ShapeWidget> {
       ],
     ));
   }
-
-  Row _topRow() {
+  _topRow() {
     return Row(
         children: <Widget>[
           Expanded(
