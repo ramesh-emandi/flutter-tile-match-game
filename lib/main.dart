@@ -190,49 +190,7 @@ class _ShapeWidgetState extends State<ShapeWidget> {
             ],
           ),
         ),
-        Row(
-          children: <Widget>[
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerOneColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: containerOneColor,
-              ),
-            )),
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerTwoColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: containerTwoColor,
-              ),
-            )),
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerThreeColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                  height: 100.0, width: 100.0, color: containerThreeColor),
-            ))
-          ],
-        ),
+        _topRow(),
         Expanded(
             child: GestureDetector(
           onTap: () {
@@ -256,53 +214,103 @@ class _ShapeWidgetState extends State<ShapeWidget> {
             )),
           ),
         )),
-        Row(
-          children: <Widget>[
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerFiveColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: containerFiveColor,
-              ),
-            )),
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerSixColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: containerSixColor,
-              ),
-            )),
-            Expanded(
-                child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  containerSevenColor = generateRandomColor();
-                  isGameOver();
-                });
-              },
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: containerSevenColor,
-              ),
-            ))
-          ],
-        ),
+        _bottomRow(),
       ],
     ));
+  }
+
+  Row _topRow() {
+    return Row(
+        children: <Widget>[
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerOneColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+              height: 100.0,
+              width: 100.0,
+              color: containerOneColor,
+            ),
+          )),
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerTwoColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+              height: 100.0,
+              width: 100.0,
+              color: containerTwoColor,
+            ),
+          )),
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerThreeColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+                height: 100.0, width: 100.0, color: containerThreeColor),
+          ))
+        ],
+      );
+  }
+
+  _bottomRow() {
+    return Row(
+        children: <Widget>[
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerFiveColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+              height: 100.0,
+              width: 100.0,
+              color: containerFiveColor,
+            ),
+          )),
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerSixColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+              height: 100.0,
+              width: 100.0,
+              color: containerSixColor,
+            ),
+          )),
+          Expanded(
+              child: GestureDetector(
+            onTap: () {
+              setState(() {
+                containerSevenColor = generateRandomColor();
+                isGameOver();
+              });
+            },
+            child: Container(
+              height: 100.0,
+              width: 100.0,
+              color: containerSevenColor,
+            ),
+          ))
+        ],
+      );
   }
 }
